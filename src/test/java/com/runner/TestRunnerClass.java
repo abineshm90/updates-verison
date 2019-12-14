@@ -8,7 +8,10 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features= {"src/test/resources/feature"},glue="com.stepdefinition")
 public class TestRunnerClass {
-	
+	private void sysout() {
+		// TODO Auto-generated method stub
+
+	}
 
 
 
