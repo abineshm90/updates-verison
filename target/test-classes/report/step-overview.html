@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cucumber-JVM Html Reports - Step Overview</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="blue/css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="blue/css/skin/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="blue/css/960.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="blue/css/reset.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="blue/css/text.css" type="text/css" media="screen" />
+
+<link rel="stylesheet" href="reporting.css" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" >
+    $(document).ready(function() {
+        $("#tablesorter").tablesorter();
+    });
+</script>
+
+</head>
+<body>
+
+ <div id="fullwidth_header">
+     <div class="container_12">
+         <h1 class="grid_4 logo"><a href="feature-overview.html" class='ie6fix'>Cucumber</a></h1>
+
+         <div id="nav">
+             <ul>
+                                  <li><a href="tag-overview.html">Tags</a></li>
+                 <li><a href="feature-overview.html">Feature</a></li>
+                 <li><a href="step-overview.html">Steps</a></li>
+             </ul>
+         </div>
+     </div>
+</div>
+
+<div class="top-menu">
+    <div class="container_12">
+        <div class="grid_9 heading">
+            <h2><span id="overview-title">Steps Overview for build: $build_number</span>
+                <br id="overview-project">Project Name: <i>AbiCucumber</i></br>
+            </h2>
+            <span class="subhead">The following graph shows step statistics for this build. Below list is based on results. If step does not provide information about result then is not listed below. Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</span>
+        </div>
+    </div>
+</div>
+
+<div class="container_12">
+    <div class="grid_12">
+
+        <div>
+            <br/>
+            <h2>Step Statistics</h2>
+            <table id="tablesorter" class="stats-table">
+
+            <thead>
+                <tr class="header">
+                    <th id="stats-header-feature">Implementation</th>
+                    <th id="stats-header-occurrences">Occurrences</th>
+                    <th id="stats-header-duration">Duration</th>
+                    <th id="stats-header-average">Average</th>
+                    <th id="stats-header-status">Ratio</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                            <tr>
+                                        
+                    <td class="tagname">StepDefinitionClass.user_is_on_HomePage()</td>
+                    <td>1</td>
+                    <td class="duration-format">20s 068ms</td>
+                    <td class="duration-format">20s 068ms</td>
+                    <td class="passed">100.0%</td>
+                </tr>
+                            <tr>
+                                        
+                    <td class="tagname">StepDefinitionClass.user_in_the_booking_confirmation_page()</td>
+                    <td>1</td>
+                    <td class="duration-format">15s 107ms</td>
+                    <td class="duration-format">15s 107ms</td>
+                    <td class="passed">100.0%</td>
+                </tr>
+                            <tr>
+                                        
+                    <td class="tagname">StepDefinitionClass.user_enters_and_enters_the_booking_page(String,String)</td>
+                    <td>1</td>
+                    <td class="duration-format">10s 671ms</td>
+                    <td class="duration-format">10s 671ms</td>
+                    <td class="passed">100.0%</td>
+                </tr>
+                            <tr>
+                                        
+                    <td class="tagname">StepDefinitionClass.user_in_theselect_hotel_page()</td>
+                    <td>1</td>
+                    <td class="duration-format">06s 872ms</td>
+                    <td class="duration-format">06s 872ms</td>
+                    <td class="passed">100.0%</td>
+                </tr>
+                            <tr>
+                                        
+                    <td class="tagname">StepDefinitionClass.user_in_the_search_hotel_page()</td>
+                    <td>1</td>
+                    <td class="duration-format">06s 174ms</td>
+                    <td class="duration-format">06s 174ms</td>
+                    <td class="passed">100.0%</td>
+                </tr>
+                            <tr>
+                                        
+                    <td class="tagname">StepDefinitionClass.user_in_the_book_ahotel_page()</td>
+                    <td>1</td>
+                    <td class="duration-format">02s 791ms</td>
+                    <td class="duration-format">02s 791ms</td>
+                    <td class="passed">100.0%</td>
+                </tr>
+                            <tr>
+                                        
+                    <td class="tagname">Hooks.afterscenario(Scenario)</td>
+                    <td>1</td>
+                    <td class="duration-format">915ms</td>
+                    <td class="duration-format">915ms</td>
+                    <td class="passed">100.0%</td>
+                </tr>
+                            <tr>
+                                        
+                    <td class="tagname">Hooks.beforescenario()</td>
+                    <td>1</td>
+                    <td class="duration-format">002ms</td>
+                    <td class="duration-format">002ms</td>
+                    <td class="passed">100.0%</td>
+                </tr>
+                        </tbody>
+                <tr class="summary">
+                    <td>8</td>
+                    <td>8</td>
+                    <td class="duration-format">1m 02s 603ms</td>
+                    <td class="duration-format">07s 825ms</td>
+                    <td>Totals</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <hr/>
+    <span>
+        <a href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a href="https://github.com/damianszczepanik/cucumber-reporting">Cucumber-JVM reports</a>
+        <br>build: 29-12-2019 16:00:52
+    </span>
+</div>
+
+</body>
+</html>

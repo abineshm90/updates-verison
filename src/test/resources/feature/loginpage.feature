@@ -1,11 +1,38 @@
-Feature: Facebook signup
+Feature: Adactin hotel booking
 
-  Scenario Outline: give data and sign up
-    Given User is on Sign up page
-    When User enters the "<firstName>" ,"<lastName>","<eMail>","<reEnter>"and "<password>"
-    And User need to choose date and choose gender
-    Then click sign up button
+  Background: 
+    Given User is on HomePage
+
+  Scenario Outline: Adactin Hotel book a room
+    When User enters the "<username>" ,"<password>" and enters booking page
+    And User now in search hotel page
+    And User is on select hotel page
+    And User is on book ahotel page
+    And user is on booking confirmation page
 
     Examples: 
-      | firstName  | lastName    | eMail                 | reEnter               | password   |
-      | selesriram | niumprasath | sele.hexa16@gmail.com | sele.hexa16@gmail.com | Sele12345! |
+      | username    | password   |
+      | abineshm900 | Abinesh123 |
+
+  @Regression
+  Scenario Outline: Adactin book a rooms
+    When User enters "<username>" ,"<password>" and enters the booking page
+    And User in the search hotel page
+    And User in theselect hotel page
+    And User in the book ahotel page
+    And user in the booking confirmation page
+
+    Examples: 
+      | username   | password   |
+      | haiabinesh | Abinesh123 |
+
+  Scenario Outline: Adactin book a rooms
+    When User enters "<username>" ,"<password>"
+    And User in search hotel page
+    And User in select hotel page
+    And User in book ahotel page
+    And user in booking confirmation page
+
+    Examples: 
+      | username   | password   |
+      | haiabinesh | Abinesh123 |
